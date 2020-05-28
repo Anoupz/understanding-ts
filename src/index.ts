@@ -7,10 +7,12 @@ import confetti from 'canvas-confetti';
 
 import Basics from './basics';
 import { Tuples, ExampleEnum } from './tuples';
+import LiteralTypes from './literalTypes';
 
 Basics();
 Tuples();
 ExampleEnum();
+LiteralTypes();
 
 confetti.create(document.getElementById('canvas'), {
   resize: true,

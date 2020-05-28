@@ -18,5 +18,14 @@ function Basics() {
   console.log(someRandomNumber);
   console.dir(person);
   console.log(person.hobbies);
+
+  function generateError(message: string, code: number): never {
+    throw { message, errorCode: code };
+  }
+
+  console.log('Throwing error now');
+  // This will stop our script (Crashes our execution and nothing further gets executed)
+  // Use try catch block to make sure our scripts continues to execute
+  // generateError('An error occurred!!', 500);
 }
 export default Basics;

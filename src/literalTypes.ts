@@ -1,13 +1,16 @@
 /*
   Literal types
 */
+
+type combinable = number | string;
+
 function LiteralTypes() {
   function combine(
-    value1: number | string,
-    value2: number | string,
+    value1: combinable,
+    value2: combinable,
     resultConversion: string,
-  ): number | string {
-    let result: number | string;
+  ): combinable {
+    let result: combinable;
 
     if (typeof value1 === 'number' && typeof value2 === 'number') {
       result = value1 + value2;

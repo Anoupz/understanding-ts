@@ -9,14 +9,20 @@ import Basics from './basics';
 import { Tuples, ExampleEnum } from './tuples';
 import LiteralTypes from './literalTypes';
 import FunctionTypes from './functionTypes';
+import ObjectSpreadExample from './objectSpread';
+import Department from './ClassesInTypescript';
 
 Basics();
 Tuples();
 ExampleEnum();
 LiteralTypes();
 FunctionTypes();
+ObjectSpreadExample();
 
-confetti.create(document.getElementById('canvas'), {
+const departmentClass = new Department('JoeClass', '123');
+departmentClass.describe();
+
+confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
   resize: true,
   useWorker: true,
 })({ particleCount: 200, spread: 200 });

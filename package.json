@@ -10,6 +10,7 @@
     "canvas-confetti": "^1.2.0"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.0.0",
     "prettier": "^2.0.0",
     "snowpack": "^2.0.0"
   }

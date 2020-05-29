@@ -17,6 +17,10 @@ function FunctionTypes() {
   addHandle(10, 20, (result) => {
     console.log(result);
   });
+
+  const add = (a: number, b: number = 2) => a + b;
+
+  console.log(add(5));
 }
 
 export default FunctionTypes;

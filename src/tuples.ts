@@ -6,13 +6,13 @@ function Tuples() {
   const person: { name: string; role: (string | number)[] } = {
     name: 'John',
     role: [2, 'author'],
-  };
+  }
 
-  console.log(person.role);
-  person.role.push('admin');
-  console.log(person.role);
-  person.role[1] = 1;
-  console.log(person.role);
+  console.log(person.role)
+  person.role.push('admin')
+  console.log(person.role)
+  person.role[1] = 1
+  console.log(person.role)
 }
 
 function ExampleEnum() {
@@ -24,9 +24,9 @@ function ExampleEnum() {
   const person: { name: string; role: Role } = {
     name: 'John',
     role: Role.ADMIN,
-  };
+  }
 
-  console.log('With Enum', person.role);
+  console.log('With Enum', person.role)
 }
 
-export { Tuples, ExampleEnum };
+export { Tuples, ExampleEnum }
